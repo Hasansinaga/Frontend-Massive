@@ -1,9 +1,4 @@
 {
-    "builds": [
-      {
-        "src": "Frontend-Web/package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "Frontend-Web/dist" }
-      }
-    ]
-  }
+  "source": "/feedback/:id",
+  "destination": "/api/feedback/:id"
+}
