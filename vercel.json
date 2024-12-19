@@ -1,9 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "Frontend-Web/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "Frontend-Web/build" }
-    }
+  "rewrites": [
+      {"source": "/(.*)", "destination": "/"}
   ]
 }
